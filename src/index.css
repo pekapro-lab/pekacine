@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .card { @apply bg-neutral-900/80 border border-neutral-800 rounded-2xl p-4; }
+  .lbl { @apply block text-xs uppercase tracking-wider text-neutral-400 mb-1; }
+  .inp { @apply w-full bg-neutral-950 border border-neutral-700 rounded-lg px-3 py-2 text-neutral-100 focus:outline-none focus:border-amber-500; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 font-medium bg-neutral-800 hover:bg-neutral-700 text-neutral-100 disabled:opacity-40 transition; }
+  .btn-a { @apply btn bg-amber-500 hover:bg-amber-400 text-neutral-950; }
+  .chip { @apply px-3 py-1.5 rounded-full border text-sm transition; }
+}
+body { -webkit-tap-highlight-color: transparent; }
